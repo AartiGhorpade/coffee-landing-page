@@ -1,0 +1,30 @@
+body {
+  background-color: black;
+}
+nav {
+  color: white;
+}
+
+.logo-name {
+  font-family: "Clicker Script", cursive;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.common-text {
+  @apply text-[16px];
+}
+
+/* md */
+@media (min-width: 768px) {
+  .common-text {
+    @apply text-[18px];
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .common-text {
+    @apply text-[20px];
+  }
+}
