@@ -1,14 +1,16 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 import HeroSection from './HomePages/HeroSection'
 import DiscvoerCoffee from './HomePages/DiscvoerCoffee'
+import NewBlends from './HomePages/NewBlends'
+import WhyWe from './HomePages/WhyWe'
 
 const Home = () => {
     return (
         <>
-            <Navbar />
             <HeroSection />
             <DiscvoerCoffee />
+            <NewBlends />
+            <WhyWe />
         </>
     )
 }

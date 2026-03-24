@@ -5,17 +5,17 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="w-full fixed top-0 left-0 z-50 px-6 md:px-10 py-4 bg-black/40 backdrop-blur-md">
+        <nav className="w-full fixed top-0 left-0 z-50 px-6 py-4 md:px-10 bg-black/40 backdrop-blur-md">
 
             <div className="flex items-center justify-between">
 
                 {/* Logo */}
-                <h1 className="logo-name text-[18px] md:text-[20px] xl:text-[24px] 3xl:text-[28px]">
+                <p className="logo-name text-[22px] md:text-[26px] xl:text-[30px] 3xl:text-[32px]">
                     Bean Scene
-                </h1>
+                </p>
 
                 {/* Desktop Menu */}
-                <ul className="hidden md:flex gap-10 text-white common-text [&>li]:cursor-pointer
+                <ul className="hidden lg:flex gap-10 text-white common-text [&>li]:cursor-pointer
                                 [&>li]:px-2 [&>li:hover]:text-[var(--btn-primary-hover)] [&>li:hover]:rounded-md">
                     <li>Home</li>
                     <li>Menu</li>
@@ -29,7 +29,7 @@ const Navbar = () => {
                     <Buttons classes="cursor-pointer bg-[var(--btn-primary)] text-black px-5 py-1 rounded-full text-[16px] xl:text-[20x] 3xl:text-[22px] font-bold hover:bg-[var(--btn-primary-hover)] transition" btnName="Sign Up" />
                     {/* Hamburger */}
                     <button
-                        className="md:hidden text-white text-2xl"
+                        className="lg:hidden text-white text-2xl"
                         onClick={() => setIsOpen(!isOpen)}
                     >
                         {isOpen ? "✕" : "☰"}

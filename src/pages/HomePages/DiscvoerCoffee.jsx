@@ -11,10 +11,12 @@ const DiscvoerCoffee = () => {
                     <Buttons classes="mt-6 cursor-pointer bg-[var(--btn-primary)] text-black px-5 py-1 rounded-full text-[16px] xl:text-[20x] 3xl:text-[22px] font-bold hover:bg-[var(--btn-primary-hover)] transition" btnName="Learn More" />
                 </div>
             </div>
-            <div className="">
+            <div className="hidden md:block">
                 <img src={coffeeImg} alt="Discover Coffee" className='w-full' />
             </div>
-
+            <div className="absolute -bottom-32 md:-bottom-14 left-0 w-full">
+                <img src={coffee_blast} alt="Discover Coffee" />
+            </div>
         </div>
     )
 }
