@@ -4,9 +4,19 @@
   font-family: "Playfair Display", serif;
   --btn-primary: #f9c06a;
   --btn-primary-hover: #f6b14a;
+  --coffee-color: #603809;
 }
 
-.main-container {
-  margin-top: 100px;
+/* md */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
 }
 
+/* xl */
+@media (min-width: 1280px) {
+  h1 {
+    font-size: 60px;
+  }
+}

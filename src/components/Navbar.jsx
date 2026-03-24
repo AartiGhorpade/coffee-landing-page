@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Buttons from "./Buttons";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -24,12 +25,8 @@ const Navbar = () => {
 
                 {/* Right Side (Desktop) */}
                 <div className="flex items-center gap-6">
-                    <button className="text-white text-[16px] xl:text-[20x] 3xl:text-[22px] hover:text-yellow-400 cursor-pointer">
-                        Sign In
-                    </button>
-                    <button className="cursor-pointer bg-[var(--btn-primary)] text-black px-5 py-1 rounded-full text-[16px] xl:text-[20x] 3xl:text-[22px] font-bold hover:bg-[var(--btn-primary-hover)] transition">
-                        Sign Up
-                    </button>
+                    <Buttons classes="text-white text-[16px] xl:text-[20x] 3xl:text-[22px] hover:text-[var(--btn-primary-hover)] cursor-pointer" btnName="Sign In" />
+                    <Buttons classes="cursor-pointer bg-[var(--btn-primary)] text-black px-5 py-1 rounded-full text-[16px] xl:text-[20x] 3xl:text-[22px] font-bold hover:bg-[var(--btn-primary-hover)] transition" btnName="Sign Up" />
                     {/* Hamburger */}
                     <button
                         className="md:hidden text-white text-2xl"
