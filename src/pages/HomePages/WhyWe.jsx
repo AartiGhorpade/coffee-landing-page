@@ -1,24 +1,26 @@
-import React from 'react'
 import Buttons from '../../components/Buttons'
-
+import coffeeBeans from '../../assets/images/coffee-beans.png'
+import highQuality from '../../assets/images/high-quality.png'
+import coffeeCup from '../../assets/images/coffee-cup.png'
+import affordablePrice from '../../assets/images/affordable-price.png'
 const reasons = [
   {
-    icon: '☕',
+    icon: coffeeBeans,
     title: 'Supreme Beans',
     desc: 'Beans that provides great taste',
   },
   {
-    icon: '⭐',
+    icon: highQuality,
     title: 'High Quality',
     desc: 'We provide the highest quality',
   },
   {
-    icon: '🔥',
+    icon: coffeeCup,
     title: 'Extraordinary',
     desc: 'Coffee like you have never tasted',
   },
   {
-    icon: '💰',
+    icon: affordablePrice,
     title: 'Affordable Price',
     desc: 'Our coffee prices are easy to afford',
   },
@@ -28,15 +30,13 @@ const WhyWe = () => {
   return (
     <section className="py-20 px-6 md:px-10 text-center bg-white">
       <div className="mx-auto max-w-5xl">
-        <h2 className="text-[var(--coffee-color)] text-3xl md:text-4xl font-bold">Why are we different?</h2>
+        <h1 className="text-[var(--coffee-color)]">Why are we different?</h1>
         <p className="common-text mt-3 mb-10 text-gray-600">We don't just make your coffee, we make your day!</p>
 
-        <div className="grid gap-6 md:grid-cols-4">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 sm:w-[80%] mx-auto md:w-full">
           {reasons.map((item, idx) => (
-            <article key={idx} className="rounded-xl border border-[#f1d3a4] bg-[#fff6e9] p-6 text-left shadow-sm">
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[var(--btn-primary)] text-xl">
-                {item.icon}
-              </div>
+            <article key={idx} className="hover:bg-[#FFEED8] border border-gray-200 p-8 text-center shadow-sm">
+              <img src={item.icon} alt={item.title} className="mb-4 inline-flex h-14 w-14 items-center justify-center" />
               <h3 className="text-xl font-semibold text-[var(--coffee-color)] mb-2">{item.title}</h3>
               <p className="text-sm text-gray-600">{item.desc}</p>
             </article>

@@ -4,6 +4,7 @@ import coffee_2 from "../../assets/images/coffee_2.png"
 import coffee_3 from "../../assets/images/coffee_3.png"
 import coffee_4 from "../../assets/images/coffee_4.png"
 import Buttons from '../../components/Buttons'
+import coffee_blast from '../../assets/images/coffee_blast_right.png'
 
 const NewBlends = () => {
     const coffeeData = [
@@ -35,9 +36,9 @@ const NewBlends = () => {
     return (
         <div className='text-center max-md:mt-14 py-20 px-6 md:px-10 relative'>
             <h1 className='text-[var(--coffee-color)]'>Enjoy a new blend of coffee style</h1>
-            <p className="common-text">Explore all flavours of coffee with us. There is always a new cup worth experiencing</p>
+            <p className="common-text mt-3 mb-10 text-gray-600">Explore all flavours of coffee with us. There is always a new cup worth experiencing</p>
 
-            <div className="grid md:grid-cols-2 sm:w-[80%] mx-auto lg:w-full lg:grid-cols-4 gap-8 max-md:gap-y-14 mt-12 relative">
+            <div className="grid md:grid-cols-2 sm:w-[80%] mx-auto lg:w-full lg:grid-cols-4 gap-8 max-md:gap-y-14 mt-12 relative 2xl:w-[90%]">
                 {coffeeData.map((coffee, index) => (
                     <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden pb-5">
                         <img src={coffee.imgSrc} alt={coffee.title} className="w-full h-50" />
