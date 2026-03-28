@@ -14,11 +14,11 @@ const DiscvoerCoffee = () => {
             <div className="hidden md:block">
                 <img src={coffeeImg} alt="Discover Coffee" className='w-full' />
             </div>
-            <div className="absolute -bottom-32 md:-bottom-14 left-0 w-full">
+            <div className="absolute -bottom-32 md:-bottom-20 left-0 w-full">
                 <img src={coffee_blast} alt="Discover Coffee" />
             </div>
         </div>
     )
-}
+}   
 
 export default DiscvoerCoffee

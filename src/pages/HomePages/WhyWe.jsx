@@ -28,7 +28,7 @@ const reasons = [
 
 const WhyWe = () => {
   return (
-    <section className="py-20 px-6 md:px-10 text-center bg-white">
+    <section className="pt-5 lg:pt-20 pb-20 px-6 md:px-10 text-center bg-white">
       <div className="mx-auto max-w-5xl">
         <h1 className="text-[var(--coffee-color)]">Why are we different?</h1>
         <p className="common-text mt-3 mb-10 text-gray-600">We don't just make your coffee, we make your day!</p>

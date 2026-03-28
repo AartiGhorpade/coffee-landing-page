@@ -41,7 +41,7 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <ul className="md:hidden gap-5 mt-5 flex flex-col text-white common-text [&>li]:cursor-pointer
+                <ul className="lg:hidden gap-5 mt-5 flex flex-col text-white common-text [&>li]:cursor-pointer
                                 [&>li]:px-2 [&>li:hover]:text-[var(--btn-primary-hover)] [&>li:hover]:rounded-md">
                     <li>Home</li>
                     <li>Menu</li>
